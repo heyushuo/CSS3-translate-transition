@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				
+			}
+			.box{
+				position: relative;
+				width: 200px;
+				height: 200px;
+				/*background: pink;*/
+				margin: 100px auto;
+				text-align: center;
+				line-height: 200px;
+				transform: rotateX(20deg) rotateY(-20deg);
+				transform-style: preserve-3d;
+				perspective: 1000000000000000000000000000000000000000px;
+			
+				transition: all 100s;
+			}
+			body:hover .box{
+					transform: rotateX(36000deg) rotateY(36000deg);
+			}
+			.box div{
+				border-radius: 100px;	
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				top: 0px;
+				left: 0px;	
+				opacity: 0.6;
+			}
+			.font{
+				background: gainsboro;
+				transform: translateZ(100px);
+				
+			}
+			.back{
+				background: aquamarine;
+				transform: translateZ(-100px);
+			}
+			.left{
+				background: azure;
+				transform: rotateY(90deg) translateZ(-100px);
+			}
+			.right{
+				background: chartreuse;
+				transform: rotateY(90deg) translateZ(100px);
+			}
+			.top{
+				background: red;
+				transform: rotateX(90deg) translateZ(100px);
+			}
+			.bottom{
+				background: blue;
+				transform: rotateX(-90deg) translateZ(100px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="font">
+				font
+			</div>
+			<div class="back">
+				back
+			</div>
+			<div class="left">
+				left
+			</div>
+			<div class="right">
+				right
+			</div>
+			<div class="top">
+				top
+			</div>
+			<div class="bottom">
+				bottom
+			</div>
+		</div>
+	</body>
+</html>

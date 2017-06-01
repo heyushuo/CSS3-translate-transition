@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			div{
+				font-size: 34px;
+				color: white;
+				text-align: center;
+				line-height: 100px;
+				margin: 0 auto;
+				height: 100px;
+				width: 300px;
+				margin-top: 50px;
+				background: red;
+				transition: all 1.5s;
+			}
+			div:nth-child(1):hover{
+				transform: scale(0.5,0.5);
+			}
+			div:nth-child(2):hover{
+				transform: translateY(200px);
+			}
+			div:nth-child(3):hover{
+				transform: rotate(360deg);
+			}
+			div:nth-child(4):hover{
+				transform: rotateX(360deg);
+			}
+			div:nth-child(5):hover{
+				transform: rotateY(360deg);
+			}
+			div:nth-child(6):hover{
+				transform: skewX(45deg);
+			}
+			div:nth-child(7):hover{
+				transform: skewY(90deg);
+			}
+			div:nth-child(8):hover{
+				transform:skewY(30deg) rotateX(360deg) translate(-100px,200px) scale(0.5,0.5) ; 
+			}
+			div:nth-child(9):hover{
+				transform-origin: left top;
+				transform: rotateY(360deg);
+			}
+			div:nth-child(10):hover{
+				transform: rotateY(360deg);
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div>1:</div>
+		<div>2:</div>
+		
+		<div>3:</div>
+		<div>4:</div>
+		<div>5:</div>
+		<div>6:</div>
+		<div>7:</div>
+		<div>8:</div>
+		<div>9:</div>
+		<div>10:</div>
+		<div>11:</div>
+		<div>12:</div>
+		<div>13:</div>
+		<div>14:</div>
+		<div>2:</div>
+		<div>2:</div>
+		<div>2:</div>
+		<div>2:</div>
+		
+	</body>
+</html>

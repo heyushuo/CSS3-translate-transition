@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			ul{
+				list-style: none;
+			}
+			ul li{
+				width: 200px;
+				text-align: center;
+				line-height: 50px;
+				
+			}
+			li:nth-of-type(even){
+				background: aquamarine;
+			}
+			li:nth-of-type(odd){
+				background: cornflowerblue;
+			}
+			ul li a{
+				text-decoration: none;
+				color: black;
+				
+			}
+			需要给div一个高度   高度为零
+			ul li div{
+				width: 200px;
+				height: 0px;
+				background: pink;
+				transition: all 1s linear;
+				
+			}
+			li:hover div{
+				height:100px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<a href="#">菜单一</a>
+				<div></div>
+			</li>
+			
+			<li>
+				<a href="#">菜单二</a>
+				<div></div>
+			</li>
+			
+			<li>
+				<a href="#">菜单三</a>
+				<div></div>
+			</li>
+			
+			<li>
+				<a href="#">菜单四</a>
+				<div></div>
+			</li>
+			
+		</ul>
+	</body>
+</html>

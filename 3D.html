@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>guodu</title>
+<meta charset="utf-8">
+<style type="text/css">
+#wp{
+border: 1px solid red;
+width: 500px;
+height: 500px;
+background-color: pink;
+color: lime;
+transition-property: background color;
+transition-duration: 5s;
+transition-timing-function: cubic-bezier(0 0 0.2 0.2);
+transition-delay: 1s;
+transform: perspective(600px);
+}
+#wp:hover{
+background: red;
+color: white;
+width: 800px;
+transform-origin: (150px 100px 120px);
+transform: skewY(80deg) rotate(45deg) translate(50%) ;
+}
+</style>
+</head>
+<body>
+<div id="wp"><h1>南海是中国的，菲律宾也是中国的</h1></div>
+</body>
+</html>
